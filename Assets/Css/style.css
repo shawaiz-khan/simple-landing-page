@@ -184,7 +184,7 @@
 /* Why Choose Us Section */
 
 .wcus-container {
-    height: 40vh;
+    height: 60vh;
     display: flex;
     padding: 2rem 7rem;
     gap: 2rem;
@@ -257,4 +257,150 @@
     object-fit: cover;
     margin-bottom: 2rem;
     margin-right: 1.8rem;
+}
+
+/* Services Section  */
+
+.services-container {
+    display: flex;
+    flex-direction: column;
+    padding: 5rem 7rem;
+    justify-content: space-evenly;
+    align-items: center;
+    justify-items: center;
+    background-image: url('../images/heroImg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 60vh;
+    position: relative;
+}
+
+.service-overlay {
+    background-color: rgba(0, 0, 0, 0.75);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.service-box-container {
+    display: flex;
+    gap: 2rem;
+    z-index: 1;
+}
+
+.service-text {
+    color: var(--color-background-light);
+    z-index: 2;
+}
+
+.service-box {
+    border: 2px solid var(--color-accent-orange);
+    width: 10rem;
+    height: 10rem;
+    padding: 1rem 1.3rem;
+    text-align: center;
+    color: var(--color-background-light);
+    /* justify-items: center; */
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.service-box:hover {
+    background-color: var(--color-accent-orange);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+/* Projects Section */
+
+.project-container {
+    display: flex;
+    flex-direction: column;
+    padding: 5rem 7rem;
+    justify-content: center;
+    gap: 2rem;
+    align-items: center;
+    height: 80vh;
+    position: relative;
+}
+
+.project-categories {
+    display: flex;
+    gap: 1rem;
+    list-style-type: none;
+    padding: 0;
+    justify-content: center;
+}
+
+.project-categories li {
+    transition: color 0.3s ease;
+}
+
+.project-categories li:hover {
+    cursor: pointer;
+    color: var(--color-accent-orange);
+}
+
+.project-box-container {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.project-box {
+    position: relative;
+    width: 15rem;
+    height: 12rem;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.project-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.project-box:hover img {
+    transform: scale(1.05);
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 102, 0, 0.863);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.project-box:hover .overlay {
+    opacity: 1;
+}
+
+.overlay-text {
+    color: white;
+    text-align: center;
+    margin-bottom: 0.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.overlay-icon {
+    font-size: 0.8rem;
+    color: white;
 }
