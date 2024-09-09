@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Root Section  */
+
+:root {
+    --color-background-light: #ffffff;
+    --color-text-dark: #333333;
+    --color-accent-orange: #ff6600;
+    --color-accent-orange-hover: #e65c00;
+    --color-highlight-yellow: #ffff00;
+    --color-highlight-yellow-hover: #cccc00;
+    --color-primary-blue: #0000ff;
+    --color-primary-blue-hover: #0000cc;
+    --color-light-gray: #f5f5f5;
+    --color-light-gray-hover: #d3d3d3;
+}
+
+/* Navigation Bar  */
+
+.nav-top {
+    background-color: var(--color-light-gray);
+    display: flex;
+    justify-content: space-around;
+    padding: 0.7rem 0;
+}
+
+.nav-top {
+    color: gray;
+    font-size: 0.7rem;
+}
+
+.nav-icons {
+    display: flex;
+    gap: 1rem;
+}
+
+.navbar {
+    background-color: var(--color-background-light);
+    display: flex;
+    justify-content: space-around;
+    padding: 2.7rem 0;
+}
+
+.navbar img {
+    width: 10rem;
+}
+
+.navbar ul {
+    display: flex;
+    gap: 25px;
+    font-weight: 500;
+    justify-content: centers;
+    justify-items: center;
+}
+
+.navbar ul li {
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.navbar ul i {
+    margin-left: 1rem;
+}
+
+.nav-icons i:hover,
+.navbar ul i:hover,
+.navbar ul li:hover {
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color: var(--color-accent-orange-hover);
+}
+
+/* Hero Section  */
+
+.hero-container {
+    background-image: url('../images/main.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+}
