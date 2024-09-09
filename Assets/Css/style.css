@@ -15,8 +15,8 @@
     --color-highlight-yellow-hover: #cccc00;
     --color-primary-blue: #0000ff;
     --color-primary-blue-hover: #0000cc;
-    --color-light-gray: #f5f5f5;
-    --color-light-gray-hover: #d3d3d3;
+    --color-light-gray: #e6e6e6;
+    --color-light-gray-text: rgb(65, 65, 65);
 }
 
 /* Navigation Bar  */
@@ -29,7 +29,7 @@
 }
 
 .nav-top {
-    color: gray;
+    color: var(--color-light-gray-text);
     font-size: 0.8rem;
 }
 
@@ -39,7 +39,7 @@
 }
 
 .nav-icons i {
-    color: rgb(65, 65, 65);
+    color: var(--color-light-gray-text);
 }
 
 .navbar {
@@ -94,7 +94,7 @@
 }
 
 .hero-overlay {
-    background-color: rgba(19, 19, 17, 0.5);
+    background-color: rgba(0, 0, 0, 0.75);
     position: absolute;
     top: 0;
     left: 0;
@@ -133,6 +133,11 @@
     height: auto;
 }
 
+.btn-container {
+    display: flex;
+    gap: 10px;
+}
+
 .full-bg-btn {
     background-color: var(--color-accent-orange);
     border: none;
@@ -158,4 +163,98 @@
     background-color: var(--color-background-light);
     color: var(--color-accent-orange);
     transition: all 0.3s ease;
+}
+
+/* Call to Action Section  */
+
+.cta-container {
+    padding: 2.5rem 0;
+    display: flex;
+    justify-content: space-evenly;
+    justify-items: center;
+    align-items: center;
+    background-color: var(--color-light-gray);
+}
+
+.cta-container h1 {
+    font-size: 1.2rem;
+    color: var(--color-light-gray-text);
+}
+
+/* Why Choose Us Section */
+
+.wcus-container {
+    height: 40vh;
+    display: flex;
+    padding: 2rem 7rem;
+    gap: 2rem;
+}
+
+.wcus-text-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.wcus-box-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.two-box {
+    display: flex;
+    /* justify-content: space-between; */
+    gap: 2rem;
+}
+
+.box {
+    display: flex;
+    gap: 1rem;
+    align-items: start;
+}
+
+.icon {
+    color: var(--color-background-light);
+    padding: 0.6rem;
+    font-size: 1rem;
+    background-color: var(--color-accent-orange);
+    border-radius: 0.4rem;
+}
+
+.icon:hover {
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background-color: var(--color-accent-orange-hover);
+}
+
+.wcus-img-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.wcus-img-container img {
+    width: 100%;
+    max-width: 60%;
+    height: 100%;
+    max-height: 85%;
+    object-fit: cover;
+    z-index: 10;
+}
+
+.wcus-img-container .image-back-shadow {
+    position: absolute;
+    border: 3px solid var(--color-light-gray);
+    width: 100%;
+    max-width: 60%;
+    height: 100%;
+    max-height: 85%;
+    object-fit: cover;
+    margin-bottom: 2rem;
+    margin-right: 1.8rem;
 }
